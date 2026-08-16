@@ -1,0 +1,22 @@
+seed: 42
+data:
+  image_extensions: [".jpg", ".jpeg", ".png"]
+  test_size: 0.20
+labels:
+  dry_max_exclusive: 35.0
+  optimum_max_inclusive: 50.0
+features:
+  histogram_bins: 8
+random_forest:
+  n_estimators: 100
+svm:
+  C: 1.0
+  gamma: scale
+  cv_folds: 5
+vgg16:
+  image_size: 128
+  batch_size: 16
+  epochs: 30
+  dropout: 0.5
+  dense_units: 256
+  l2: 0.01
